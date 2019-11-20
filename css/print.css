@@ -1,0 +1,48 @@
+/*media print screen*/
+
+@media print {
+
+	body{
+
+		margin: 0px;
+		padding: 0px;
+		background-color: #000;
+		width: 100%;
+		display: block;
+	}
+
+	input{
+		display: none;
+	}
+	button {
+		visibility: hidden;
+	}
+
+	.form-table p{
+		display: none;
+	}
+
+	.form-table label{
+		text-align: center;
+	}
+
+	i.small{
+		display: none;
+	}
+	th.shortcode, td.values{
+		font-size: 70px;
+		color: red;
+		text-align: center;
+		background-color: white;
+	}
+
+	h1.cd{
+		font-size: 60px;
+	}
+
+	div.something{
+		margin: 0px;
+		text-align: center;
+	}
+}
+
