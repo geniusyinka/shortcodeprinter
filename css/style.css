@@ -50,6 +50,14 @@ td.value{
 
 }
 
+h1.heads{
+	font-size: 90px;
+	float: right;
+}
+
+
+
+
 /*media print screen*/
 
 @media print {
@@ -64,13 +72,21 @@ td.value{
 		margin: 0 !important;
 		padding: 0 !important;
 		height: 100%;
-		font-size: 82px;	
+		font-size: 102px;	
 		overflow: hidden;
-		text-align: center;	
+/*		text-align: center;	*/
 		font-weight: bold;
 		float: none !important;
 
 	}
+
+table tr {
+  display: block
+}
+table td {
+text-align: center;
+  line-height: 22px;
+}
 
 	span{
 		display: none;

@@ -2,7 +2,7 @@ $(document).ready(function(){
     function fetch_data()  
     {  
         $.ajax({  
-            url:"myselect.php",  
+            url:"admin/myselect.php",  
             method:"POST",  
             success:function(data){  
                 $('#live_data').html(data);  
@@ -19,7 +19,7 @@ $(document).ready(function(){
             return false;  
         }   
         $.ajax({  
-            url:"insert.php",  
+            url:"admin/insert.php",  
             method:"POST",  
             data:{shortcode:shortcode, value:value},  
             dataType:"text",  
@@ -34,7 +34,7 @@ $(document).ready(function(){
     function edit_data(id, text, column_name)  
     {  
         $.ajax({  
-            url:"editCode.php",  
+            url:"admin/editCode.php",  
             method:"POST",  
             data:{id:id, text:text, column_name:column_name},  
             dataType:"text",  
@@ -51,10 +51,10 @@ $(document).ready(function(){
         edit_data(id, shortcode, "shortcode");  
     });
 
-    $(document).on('blur', '.value', function(){  
+    $(document).on('blur', '.values', function(){  
         var id = $(this).data("id2");  
         var value = $(this).text();  
-        edit_data(id,value, "value");  
+        edit_data(id, value, "value");  
     }); 
     $(document).on('click', '.btn_delete', function(){  
         var id=$(this).data("id3");  
@@ -74,6 +74,4 @@ $(document).ready(function(){
     });  
 
 }); 
-
-
 
