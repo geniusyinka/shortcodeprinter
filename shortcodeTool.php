@@ -1,7 +1,7 @@
 <?php
 /**
 * Plugin Name: Items Shortcode printer
-* Plugin URI: https://www.github.com
+* Plugin URI: https://github.com/yunggenius/shortcodeprinter
 * Description: This plugin is designed to create new category shortcodes and print them.
 * Version: 1.0
 * Author: Olayinka Oshidipe
